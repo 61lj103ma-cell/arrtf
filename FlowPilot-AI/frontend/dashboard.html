@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dashboard — FlowPilot AI</title><link rel="stylesheet" href="/css/style.css"></head>
+<body class="dashboard-page"><div class="bg-grid"></div>
+<header class="nav"><a class="brand" href="/">✦ FlowPilot <span>AI</span></a><div class="nav-actions"><span id="userName" class="user-pill">Loading...</span><button id="logoutBtn" class="btn ghost">Log out</button></div></header>
+<main class="dash-page-main">
+<section class="dash-welcome"><div><div class="eyebrow"><i></i> YOUR WORKSPACE</div><h1>Build with <span>momentum.</span></h1><p>Projects, AI and your next move — all in one place.</p></div><button id="newProjectBtn" class="btn primary">+ New project</button></section>
+<section class="stats"><div><small>PROJECTS</small><strong id="projectCount">0</strong></div><div><small>AI SESSIONS</small><strong id="sessionCount">0</strong></div><div><small>STATUS</small><strong>ONLINE</strong></div></section>
+<section class="workspace-grid">
+<div class="panel"><div class="panel-head"><h2>Your projects</h2><span id="projectStatus"></span></div><div id="projects" class="projects"></div></div>
+<div class="panel ai-panel"><div class="panel-head"><h2>FlowPilot AI</h2><span class="online">● ONLINE</span></div><div id="chat" class="chat"><div class="bubble ai">Hi! Tell me what you're building and I'll help you turn it into a clear next step.</div></div><form id="aiForm" class="ai-form"><input id="prompt" placeholder="Ask FlowPilot anything..." autocomplete="off"><button class="btn primary" type="submit">Send</button></form></div>
+</section>
+</main>
+<div id="modal" class="modal hidden"><div class="modal-card"><button id="closeModal" class="modal-close">×</button><div class="eyebrow"><i></i> NEW PROJECT</div><h2>Create a project</h2><form id="projectForm"><label>Project name<input id="projectName" required placeholder="e.g. Portfolio website"></label><label>Description<textarea id="projectDescription" placeholder="What are you building?"></textarea></label><button class="btn primary big">Create project →</button></form></div></div>
+<script src="/js/dashboard.js"></script></body></html>
